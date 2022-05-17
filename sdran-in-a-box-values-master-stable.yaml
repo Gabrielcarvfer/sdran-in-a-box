@@ -160,6 +160,20 @@ config:
       s1u:
         interface: enb
   oai-enb-du:
+  #  radio:
+  #    # https://rahix.github.io/frequency-bands
+  #    # band  7, DL 2620-2690 MHz, UL 2500-2570 MHz
+  #    # band 38, DL 2570-2620 MHz, UL 2570-2620 MHz
+  #    # band 42, DL 3400-3600 MHz, UL 3400-3600 MHz
+  #    # band 43, DL 3600-3800 MHz, UL 3600-3800 MHz
+  #    eutra_band: 42 #7 [7,38,42,43]
+  #    downlink_frequency: 3405000000L #2630000000L
+  #    uplink_frequency_offset: -5000000 #-120000000 # offset = UL freq - DL freq in Hz
+  #    rbs: 25 # 25 RBs = 5MHz
+  #    max_rxgain: 125
+  #    max_pdschReferenceSignalPower: -25
+  #    rx_gain: 125
+  #    tx_gain: 90
     mode: nfapi #or local_L1 for USRP and BasicSim
     networks:
       f1:
